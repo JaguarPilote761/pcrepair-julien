@@ -9,8 +9,8 @@
 
     --primary:#0d6efd;
     --primary-light:#3ea6ff;
-    --dark:#070707;
-    --dark2:#111111;
+    --dark:#0b0f1a;
+    --dark2:#111827;
     --card:#181818;
     --white:#ffffff;
     --text:#d8d8d8;
@@ -97,19 +97,20 @@ section{
     min-height:100vh;
 
     display:flex;
-
     align-items:center;
 
+    /* Fond plus premium + cohérent avec le body */
     background:
 
-    linear-gradient(rgba(0,0,0,.85),rgba(0,0,0,.85)),
+    radial-gradient(circle at top right, rgba(13,110,253,.25), transparent 45%),
+    radial-gradient(circle at bottom left, rgba(0,191,255,.15), transparent 40%),
+    linear-gradient(135deg, #0b0f1a 0%, #0d1324 50%, #0a0f1d 100%);
 
-    radial-gradient(circle at top right,#0d6efd22,transparent 40%),
+    position:relative;
 
-    radial-gradient(circle at bottom left,#00bfff22,transparent 35%);
+    overflow:hidden;
 
 }
-
 .hero h1{
 
     color:white;
@@ -433,3 +434,12 @@ h3,h4,h5{
 .hero-logo:hover{
     transform: scale(1.05);
 }
+body{
+
+    font-family:'Poppins',sans-serif;
+    background: linear-gradient(135deg, #0b0f1a 0%, #0d1324 50%, #0a0f1d 100%);
+    color:var(--text);
+    overflow-x:hidden;
+
+}
+background-attachment: fixed;
