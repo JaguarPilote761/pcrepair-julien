@@ -416,3 +416,20 @@ h3,h4,h5{
     }
 
 }
+.hero-logo{
+
+    width: 280px;
+    max-width: 90%;
+    height: auto;
+
+    filter: drop-shadow(0 0 20px rgba(13,110,253,.6));
+
+    animation: float 4s ease-in-out infinite;
+
+    transition: .3s;
+
+}
+
+.hero-logo:hover{
+    transform: scale(1.05);
+}
